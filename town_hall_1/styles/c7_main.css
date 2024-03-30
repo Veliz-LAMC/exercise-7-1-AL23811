@@ -45,6 +45,65 @@ header img {
 .shadow {
 	text-shadow: 2px 2px 2px #800000;
 }
+
+/* this is the style for the nav */ 
+
+ul{
+list-style: none;
+position: relative;
+}
+
+ul ul {
+	display: none;
+	position:absolute;
+	
+}
+
+ul ul li{
+	float: none;
+}
+
+ul li{
+	margin: 0;
+	padding: 0;
+	float: left;	
+}
+
+ul li:hover > ul {
+	display: block;
+}
+
+#nav_menu > ul ::after{
+	
+	display: block;
+	clear: both;
+}
+
+ul li a {
+	display: block;
+	width:160px ;
+	text-align: center;
+	padding: 1em 0;
+	text-decoration: none;
+	background-color: #800000;
+	color: white;
+	font-weight: bold;
+}
+
+#current{
+	color: yellow;
+}
+
+.circle li {
+	list-style-type: circle;
+    padding: 2%;
+}
+
+.circle ul{
+	margin: 10px;
+}
+
+
 /* the styles for the section */
 section {
 	width: 525px;
@@ -124,3 +183,4 @@ footer p {
 	color: white;
 	padding: 1em 0;
 }
+
